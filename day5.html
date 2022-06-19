@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="resource/css/swiper-bundle.min.css">
+    <title>我的首页</title>
+
+
+</head>
+
+<body>
+
+    <!-- 样式 -->
+    <style>
+        
+    </style>
+    <!-- 连接到另一个样式文件。 style.css -->
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+
+    <!-- 使用 SASS文件 -->
+    <!-- 连接到另一个 SASS文件生成的 Style 文件 -->
+    <!-- 使用 live Sass Compiler 插件 ./mystyle.scss    mystyle.css -->
+    <link rel="stylesheet" href="./mystyle.css">
+
+    <!-- 结构 -->
+    <header class="header">
+
+		<!-- <video autoplay loop muted src="./resource/video/shentu.mp4"></video> -->
+        <!-- navi-wrapper 版心 -->
+        <ul class="navi-wrapper">
+            <li class="navi-item"> 
+                <span class="cn">首页</span> <br> 
+                <span class="en">HOME</span>
+            </li>
+            <li class="navi-item"> 
+                <span class="cn">新闻中心</span> <br> 
+                <span class="en">NEWS</span>
+            </li>
+            <li class="navi-item"> 
+                <span class="cn">账号注册</span> <br> 
+                <span class="en">REGISTER</span>
+            </li>
+            <li class="navi-item"> 
+                <!-- <span class="cn">LOGO</span> <br> <span class="en"></span> -->
+                <img class="logo" src="./resource/images/bannerlogo.png">
+            </li>
+            <li class="navi-item"> 
+                <span class="cn">充值中心</span> <br> 
+                <span class="en">RECHARGE</span>
+            </li>
+            <li class="navi-item"> 
+                <span class="cn">下载游戏</span> <br> 
+                <span class="en">DOWNLOAD</span>
+            </li>
+            <li class="navi-item"> 
+                <span class="cn">联系我们</span> <br> 
+                <span class="en">CONTACTUS</span>
+            </li>
+        </ul>
+    </header>
+
+	
+    <!-- 内容的容器 -->
+    <main class="content">
+		<div class="kefu">
+				<!-- QQ -->
+			<!-- <span>客户QQ1</span> -->
+			<ul class="wrapper">
+				<li>
+					<!-- 客户QQ1 -->
+				<img src="./resource/images/title-qq.png"/>
+				</li>
+				<li>
+					<span>QQ客服1</span>
+					<img src="./resource/images/fixed-qq1.png"/>
+				</li>
+				<li>
+					<span>QQ客服2</span>
+					<img src="./resource/images/fixed-qq1.png"/>
+				</li>
+				<li>
+					<!-- 官方qq -->
+					<img src="./resource/images/title-qun.png" alt="">
+				</li>
+				<li>
+					<span>玩家交流群1</span>
+					<img src="./resource/images/fixed-qq2.png"/>
+				</li>
+				<li>
+					<span>玩家交流群2</span>
+					<img src="./resource/images/fixed-qq2.png"/>
+				</li>
+				<li>
+					<span>玩家交流群3</span>
+					<img src="./resource/images/fixed-qq2.png"/>
+				</li>
+				<li>
+					<span>玩家交流群4</span>
+					<img src="./resource/images/fixed-qq2.png"/>
+				</li>
+				<li class="wx">关注公众号</li>
+				<li>
+					<img src="./resource/images/fixed-code.png" alt="">
+				</li>
+				<li>
+					<img src="./resource/images/backtop.png" alt="">
+				</li>
+			</ul>
+		</div>
+		
+		<div class="kefu2">
+			
+		</div>
+        <!-- 内容 -->
+        <!-- 有背景图（游戏角色）的元素 -->
+        <div class="ct-logo">
+			<video autoplay loop muted src="./resource/video/shentu.mp4"></video>
+            <img class="img1" src="./resource/images/bannertxt2.png" alt="">
+            <img class="img2" src="./resource/images/bannertxt1.png" alt="">
+            <img class="img3" src="./resource/images/bannerlogo.png" alt="">
+			
+        </div>
+		<!-- <aside class="aside">
+			<img class="back" src="./resource/images/fixedboxbg.png"/>
+			<div>
+				<img src="./resource/images/title-qq.png"/>
+			</div>
+		</aside> -->
+         <!-- 公告和职业 -->
+               <div class="ct-news">
+                   <!-- 新闻，职业， 技能， -->
+                   <!-- 不可以放版权信息相关的 -->
+                   <!-- 最新公告 -->
+                   <div class="news">
+                       
+                       <img src="./resource/images/icon-news.png" alt="">
+                       
+                       <span >
+                           最新公告:
+                       </span>
+					   <span class="roll-wrapper">
+					   <span class="roll-box">
+						   <li class="item">【标题1】自定义信息自定义信息</li>
+						   <li class="item">【标题2】自定义信息自定义信息</li>
+						   <li class="item">【标题3】自定义信息自定义信息</li>
+					   </span>
+					   </span>
+                       <span class="right">
+                           查看详情>>
+                       </span>
+                   </div>
+       
+                   <!-- 职业介绍 -->
+                   <!-- 2行，每行3个元素 -->
+                   <div class="row">
+                       <div class="card">
+                           <!-- 图片 -->
+                           <img class="float-right" src="./resource/images/icon-new.gif" alt="" >
+                           <!-- 职业介绍的图片 -->
+						   <div class="image1">
+							   <div class="qrcode">
+							   <!-- 增加二维码特效 -->
+							   <span>扫描二维码  下载神途手游</span>
+							   <br />
+							   <img src="resource/images/fixed-code.png"/>
+							   </div>
+						   </div>
+                           <div class="wrapper">
+                               <!-- 职业名字 -->
+                               <div class="title">
+                                   神途单职业
+                               </div>
+                               <!-- 开区时间 -->
+                               <div class="info">
+                                   开区时间：（10:00 16:00 20:00)
+                               </div>
+                               <!-- 三只松鼠 -->
+                               <div class="btn">
+                                   <button type="button">进入官网</button>
+                                   <button type="button">微端下载</button>
+                                   <button type="button">手游下载</button>
+                               </div>
+                           </div>
+                           
+                       </div>
+                       <div class="card">
+                           <!-- 图片 -->
+						   <img class="float-right" src="./resource/images/icon-hot.gif" alt="" >
+                           <div class="image2">
+							   <div class="qrcode">
+							   <!-- 增加二维码特效 -->
+							   <span>扫描二维码  下载神途手游</span>
+							   <br />
+							   <img src="resource/images/fixed-code.png"/>
+							   </div>
+						   </div>
+                           <div class="wrapper">
+                               <!-- 职业名字 -->
+                               <div class="title">
+                                   神途单职业
+                               </div>
+                               <!-- 开区时间 -->
+                               <div class="info">
+                                   开区时间：（10:00 16:00 20:00)
+                               </div>
+                               <!-- 三只松鼠 -->
+                               <div class="btn">
+                                   <button type="button">进入官网</button>
+                                   <button type="button">微端下载</button>
+                                   <button type="button">手游下载</button>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="card">
+                           <!-- 图片 -->
+                           <div class="image3">
+							   <div class="qrcode">
+							   <!-- 增加二维码特效 -->
+							   <span>扫描二维码  下载神途手游</span>
+							   <br />
+							   <img src="resource/images/fixed-code.png"/>
+							   </div>
+						   </div>
+                           <div class="wrapper">
+                               <!-- 职业名字 -->
+                               <div class="title">
+                                   神途单职业
+                               </div>
+                               <!-- 开区时间 -->
+                               <div class="info">
+                                   开区时间：（10:00 16:00 20:00)
+                               </div>
+                               <!-- 三只松鼠 -->
+                               <div class="btn">
+                                   <button type="button">进入官网</button>
+                                   <button type="button">微端下载</button>
+                                   <button type="button">手游下载</button>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="row">
+                       <div class="card">
+                           <!-- 图片 -->
+                           <div class="image4">
+							   <div class="qrcode">
+							   <!-- 增加二维码特效 -->
+							   <span>扫描二维码  下载神途手游</span>
+							   <br />
+							   <img src="resource/images/fixed-code.png"/>
+							   </div>
+						   </div>
+                           <div class="wrapper">
+                               <!-- 职业名字 -->
+                               <div class="title">
+                                   神途单职业
+                               </div>
+                               <!-- 开区时间 -->
+                               <div class="info">
+                                   开区时间：（10:00 16:00 20:00)
+                               </div>
+                               <!-- 三只松鼠 -->
+                               <div class="btn">
+                                   <button type="button">进入官网</button>
+                                   <button type="button">微端下载</button>
+                                   <button type="button">手游下载</button>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="card">
+                           <!-- 图片 -->
+                           <div class="image5">
+							   <div class="qrcode">
+							   <!-- 增加二维码特效 -->
+							   <span>扫描二维码  下载神途手游</span>
+							   <br />
+							   <img src="resource/images/fixed-code.png"/>
+							   </div>
+						   </div>
+                           <div class="wrapper">
+                               <!-- 职业名字 -->
+                               <div class="title">
+                                   神途单职业
+                               </div>
+                               <!-- 开区时间 -->
+                               <div class="info">
+                                   开区时间：（10:00 16:00 20:00)
+                               </div>
+                               <!-- 三只松鼠 -->
+                               <div class="btn">
+                                   <button type="button">进入官网</button>
+                                   <button type="button">微端下载</button>
+                                   <button type="button">手游下载</button>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="card">
+                           <!-- 图片 -->
+                           <div class="image6">
+							   <div class="qrcode">
+							   <!-- 增加二维码特效 -->
+							   <span>扫描二维码  下载神途手游</span>
+							   <br />
+							   <img src="resource/images/fixed-code.png"/>
+							   </div>
+						   </div>
+                           <div class="wrapper">
+                               <!-- 职业名字 -->
+                               <div class="title">
+                                   神途单职业
+                               </div>
+                               <!-- 开区时间 -->
+                               <div class="info">
+                                   开区时间：（10:00 16:00 20:00)
+                               </div>
+                               <!-- 三只松鼠 -->
+                               <div class="btn">
+                                   <button type="button">进入官网</button>
+                                   <button type="button">微端下载</button>
+                                   <button type="button">手游下载</button>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <!-- 更多版本 -->
+				   <!-- 更多版本 -->
+				   <div class="ct-more">
+					   <div class="control">
+				   		查看更多版本
+						</div>
+				   </div>
+				   <!-- 新闻中心 -->
+				   <div class="ct-img-news">
+					   <div class="img-news">
+						   <div class="img-list">
+							   <img src='./resource/images/img550x310.jpg'/>
+						   </div>
+						   
+					   </div>
+					   <div class="text-news">
+						   <div class="tab-title">
+						   <span  class="active" id="first">新闻公告</span>
+						   <span class="active">游戏特色</span>
+						   <span class="active">开合区规则</span>
+						   </div>
+					   <div class="tab-content">
+						   
+						   <ul>
+							   <li>
+								   <span class="recom">
+									   <span class="tuijian">推荐</span>[无文案内容]请右键打开方式，选择软件编辑index.html中的文字</span>
+							   </li>
+							   <li>
+								   <span class="text"> [无文案内容]请根据实际需要右键打开方式，选择软件编辑index.html中的文字</span>
+								    <span class="info">08-18</span>
+								   </li>
+							   <li>
+								    <span class="text">[无文案内容]请根据实际需要右键打开方式，选择软件编辑index.html中的文字</span>
+								   <span class="info">08-18</span>
+								   </li>
+							   <li>
+								    <span class="text">[无文案内容]请根据实际需要右键打开方式，选择软件编辑index.html中的文字</span>
+									<span class="info">08-18</span></li>
+							   <li>
+								    <span class="text">[无文案内容]请根据实际需要右键打开方式，选择软件编辑index.html中的文字</span>
+									<span class="info">08-18</span></li>
+							   <li>
+								    <span class="text">[无文案内容]请根据实际需要右键打开方式，选择软件编辑index.html中的文字</span>
+									<span class="info">08-18</span></li>
+							   <li>
+								    <span class="text">[无文案内容]请根据实际需要右键打开方式，选择软件编辑index.html中的文字</span>
+									<span class="info">08-18</span></li>
+						   </ul>
+						   
+						   
+					   </div>
+					 </div>
+				   </div>
+       
+                   <!-- 视频中心 -->
+				   <div class="v-center">
+					   <!-- 标题 -->
+					   <div class="title">
+						   <!-- <span class="block"></span> -->
+						   <span class="cn">视频中心</span>
+						   <span class="en">Videolist</span>
+						   <span class="right">》</span>
+						   <span class="right">《</span>
+
+					   </div>
+					   <!-- 列表 -->
+					   <div class="v-img-list">
+						   <div class="wrapper">
+							   <ul class="img-list">
+								   <li class="item">
+									   <img src="./resource/images/video-img285x160-1.jpg" alt=""/><br />
+									   <div class="play">
+										   <div class="qrcode">
+											   <!-- 增加播放特效 -->
+											   <img src="./resource/images/icon-video.png"/>
+									   		</div>
+									   </div>
+									   <span class="mask"></span>
+									   <span class="info">视频描述</span>
+								   </li>					   
+							   </ul>
+							   <ul class="img-list">
+							   		<li class="item">
+							   			<img src="./resource/images/video-img285x160-2.jpg" alt=""/><br />
+										<div class="play">
+											<div class="qrcode">
+												<!-- 增加播放特效 -->
+												<img src="./resource/images/icon-video.png"/>
+												</div>
+										</div>
+							   			<span class="mask"></span>
+							   			 <span class="info">视频描述</span>
+							   	    </li>					   
+							   </ul>
+							   <ul class="img-list">
+							   		<li class="item">
+							   			<img src="./resource/images/video-img285x160-1.jpg" alt=""/><br />
+										<div class="play">
+											<div class="qrcode">
+												<!-- 增加播放特效 -->
+												<img src="./resource/images/icon-video.png"/>
+												</div>
+										</div>
+							   			<span class="mask"></span>
+							   			 <span class="info">视频描述</span>
+							   	    </li>					   
+							   </ul>
+							   <ul class="img-list">
+							   		<li class="item">
+							   			<img src="./resource/images/video-img285x160-2.jpg" alt=""/><br />
+										<div class="play">
+											<div class="qrcode">
+												<!-- 增加播放特效 -->
+												<img src="./resource/images/icon-video.png"/>
+												</div>
+										</div>
+							   			<span class="mask"></span>
+							   			 <span class="info">视频描述</span>
+							   	    </li>					   
+							   </ul>
+							   <ul class="img-list">
+							   		<li class="item">
+							   			<img src="./resource/images/video-img285x160-2.jpg" alt=""/><br />
+							   			<span class="mask"></span>
+										<div class="play">
+											<div class="qrcode">
+												<!-- 增加播放特效 -->
+												<img src="./resource/images/icon-video.png"/>
+												</div>
+										</div>
+							   			 <span class="info">视频描述</span>
+							   	    </li>					   
+							   </ul>
+							   <ul class="img-list">
+							   		<li class="item">
+							   			<img src="./resource/images/video-img285x160-2.jpg" alt=""/><br />
+							   			<span class="mask"></span>
+							   			 <span class="info">视频描述</span>
+							   	    </li>					   
+							   </ul>
+						   </div>
+					   </div>
+				   </div>
+       
+                   <!-- 装备展示  -->
+				   <div class="v-equip">
+					   <div class="title">
+						   <span class="cn"> 装备中心 </span>
+						   <span class="en">Equitment</span>
+						</div>
+						<div class="equip-list">
+							<div class="row">
+								<div class="item">
+									<img src='./resource/images/img550x309-1.gif'/>
+							</div>
+							</div>
+							<div class="row">
+							<div class="item">
+								<img src='./resource/images/img550x309-2.gif'/>
+							</div>
+						</div>
+						</div>
+						<div class="equip-list">
+						<div class="row">
+							<div class="item">
+								<img src='./resource/images/img550x309-2.gif'/>
+							</div>
+						</div>
+						<div class="row">
+							<div class="item">
+								<img src='./resource/images/img550x309-1.gif'/>
+							</div>
+						</div>
+						</div>				
+				   </div>
+				   
+				   
+                   <!-- 游戏截图图 -->
+				   <div class="screen">
+					   
+					   <div class="title">
+						   <span class="cn">游戏截图</span>
+						   <span class="en">Screenshot</span>
+					   </div>
+					   <div class="print">
+						   <!-- 游戏截图显示 -->
+<!--						   <div class="btn1">-->
+<!--							   <img src="./resource/images/btn-prev.png" alt="">-->
+<!--						   </div>-->
+<!--						   <div class="btn2">-->
+<!--							   <img src="./resource/images/btn-next.png" alt="">-->
+<!--						   </div>-->
+<!--						   <div class="shot">-->
+<!--							   <ul>-->
+<!--								   <li><img src="./resource/images/jt01.gif" /></li>-->
+<!--								 <li><img src="./resource/images/jt02.gif" /></li>-->
+<!--								   <li><img src="./resource/images/jt03.gif" /></li>-->
+<!--							   </ul>-->
+<!--							   &lt;!&ndash; <img src="./resource/images/jt01.gif" /> &ndash;&gt;-->
+<!--						   </div>-->
+						   <div class="swiper">
+							   <div class="swiper-wrapper">
+								   <div class="swiper-slide"><img src="./resource/images/jt01.gif" /></div>
+								   <div class="swiper-slide"><img src="./resource/images/jt02.gif" /></div>
+								   <div class="swiper-slide"><img src="./resource/images/jt03.gif" /></div>
+							   </div>
+
+
+							   <!-- 如果需要导航按钮 -->
+							   <div class="swiper-button-prev"></div>
+							   <div class="swiper-button-next"></div>
+
+
+						   </div>
+					   </div>
+				   </div>
+               </div>
+		
+    </main>
+	
+
+	<footer class="footer">
+		<div class="logo">
+			<img src="./resource/images/bannerlogo.png"/>
+		</div>
+		<div class="located">
+			
+			<span class="ye">健康游戏忠告：抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。 
+			适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。</span><br />
+			<span class="ye">
+				适龄提示：本游戏适合18岁以上的成年人进入，请您确定已如实进行实名认证，
+				为了您的健康，请合理控制游戏时间，适度娱乐，理性消费。
+			</span><br />
+			<span class="wh">著作权人：杭州神兔网络科技有限公司 ｜ 出版单位： 北京科海电子出版社 ｜
+			 审批文号： 新广出审[2018]2069号 ｜ 出版物号：ISBN 978-7-498-05396-2</span><br />
+			<span class="wh">友情链接： 神途官网 ｜ 神途发布网投诉QQ：800088888 ｜ 投诉电话：0571-89806351</span>
+		</div>
+			
+	</footer>
+	
+	
+
+	<!-- 分两块 -->
+	
+</body>
+
+<!-- <script>
+	console.log(document);
+	console.log(window);
+	// 单选一个
+	var el = document.querySelector("body");
+	var el2 = document.querySelectorAll("li");
+	console.log(el);
+	console.log(el2);
+	var el3 = document.querySelectorAll(".header li");
+	console.log("导航栏下的所有li标签",el3);
+	var headerList = document.querySelectorAll(".header li");
+	// 通过下标访问结点中的第几个元素
+	console.log("第0个li元素",headerList[0]);
+	
+</script> -->
+<script src="index.js">
+
+</script>
+<script src="resource/js/swiper-bundle.min.js">
+
+</script>
+<script>
+	var mySwiper = new Swiper ('.swiper', {
+
+		loop: true, // 循环模式选项
+
+
+
+		// 如果需要前进后退按钮
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+
+
+	})
+</script>
+
+</html>

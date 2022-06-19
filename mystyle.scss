@@ -1,0 +1,726 @@
+body {
+    margin: 0;
+    // background-image: url("./resource/images/bg-body.jpg");
+	background-image: url("./resource/images/bg-body.jpg");
+	// width: 100%; 
+	// height: 100%; 
+	// overflow: hidden;
+
+
+    // 结构 - 导航
+    .header {
+       // background-color: #1e363a;
+		background: rgba(31, 55, 59, 0.762);
+        font-size: 18px;
+        color: rgb(255, 255, 255);
+        width: 100%;
+        text-align: center;
+        margin-bottom: -90px;
+        position: fixed;
+        z-index: 10;
+		
+
+        // 版心
+        .navi-wrapper {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            width: 100%;
+            justify-content: space-evenly;
+
+            // 导航菜单
+            .navi-item {
+                padding: 20px 10px;
+                list-style: none;
+
+                // 中文
+                .cn {
+                    font-weight: 700;
+                }
+				&:hover .cn{
+					color: #c6e0df;
+					cursor: pointer;
+				}
+
+                // 英文
+                .en {
+                    font-size: 12px;
+					font-weight: 500;
+                    color: rgb(191,151,146);
+                }
+				
+				&:hover .en{
+					color: rgb(192, 139, 112);
+					cursor: pointer;
+				}
+                // logo 元素
+                .logo {
+                    position: absolute;
+                    height: 100px;
+                    left: 45%;
+                    top: 25px;
+					z-index: 100;
+                }
+            }
+        }
+    }
+	video{  
+	    position: absolute;
+		top: 50%; 
+		left: 50%;
+	    transform: translate(-50%, -50%);
+	    object-fit: cover;
+	    height: 100%; 
+		width: 100%;
+	 }  
+
+
+
+    // 结构 - 内容的容器
+    .content {
+		.kefu{
+		
+			// border: 1px solid red;
+			background-image: url("./resource/images/fixedboxbg.png");
+			height: 570px;
+			width: 220px;
+			position: absolute;
+			padding: 0 0px;
+			background-repeat: no-repeat;
+			top:100px;
+			right: 15px;
+			z-index: 9;
+			.wrapper{
+				padding: 0;
+				text-align: center;
+				li{
+					list-style: none;
+					line-height: 36px;
+					color: #7cb0b1;
+				}
+				.wx{
+					font-size: 22px;
+				}
+				
+			}
+		}
+      
+        // padding: -100px 10%;
+
+        /* 有背景图（游戏角色）的元素 */ 
+        .ct-logo {
+            // background-image: url("./resource/images/bg.jpg");
+            height: 800px;
+			
+            // background-size 设置背景图片的大小
+            // length	设置背景图片高度和宽度。第一个值设置宽度，第二个值设置的高度。如果只给出一个值，第二个是设置为 auto(自动)
+            // percentage	将计算相对于背景定位区域的百分比。第一个值设置宽度，第二个值设置的高度。如果只给出一个值，第二个是设置为"auto(自动)"
+            // cover	此时会保持图像的纵横比并将图像缩放成将完全覆盖背景定位区域的最小大小。
+            // contain	此时会保持图像的纵横比并将图像缩放成将适合背景定位区域的最大大小。
+            background-size: 100% auto;
+            padding: 0px 10%;
+            background-repeat: no-repeat;
+
+            // 把子元素 的 绝对定位（相对于页面） 改成相对于本元素。（子元素不会跑出去了）
+            position: relative;
+
+            //  logo 下面的图片
+            .img1 {
+                left: 10%;
+                top: 20%;
+                // position 定位 
+                // relative  相对定位 
+                // absolute 绝对定位 
+                // static 默认  不能设置 top,left right,bottom
+                // position: relative;
+
+                // 
+                position: relative;
+                width: 20%;
+            }
+            .img2 {
+                // bottom: 220px;
+                // right: 40%;
+                position: relative;
+                right: -31%;
+                bottom: -45%;
+                width: 43%;
+            }
+            .img3 {
+                position: absolute;
+                top: 14%;
+                right: 22%;
+                width: 15%;
+            }
+        }
+
+        // 公告和职业
+        .ct-news {
+            padding: 0px 15%;
+            height: 500px;
+            // 往上偏移一下
+            top: -50px;
+            position: relative;
+            .news {
+
+                line-height: 22px;
+                // rgb(r,g,b)
+                // 新的颜色表示法，rgba(r,g,b,透明度)
+                background-color: rgba(255, 255, 255, 0.575);
+                padding: 5px 10px;
+                img {
+                    top: 5px;
+                    position: relative;
+                }
+          
+                .right {
+                    // 浮动元素
+                    // float : left    float:right 
+                    float: right;
+                    color: #7eb4b1;
+                    // 设置图标 cursor 
+                    cursor: pointer;
+                }
+				.roll-wrapper{
+					display: inline-block;
+					overflow: hidden;
+					height: 24px;
+					.roll-box{
+						// top:-40px;
+						position: relative;
+						.item{
+							line-height: 33px;
+							list-style: none;
+						}
+					}
+				}
+            }
+
+            // 职业介绍
+            .row {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 20px;
+
+                .card {
+                    // height: 200px;
+                    width: 30%;
+                    // 辅助边框
+                    // border: 1px solid red;
+                    border: 1px solid #b1ddd6;
+                    text-align: center;
+                    position: relative;
+                    background-color: white;
+
+                    // 浮动到右上角的小丝带
+                    .float-right {
+                        position: absolute;
+                        right: -6px;
+                        top: 0;
+                    }
+                    // 职业卡片 图片
+					&:hover .image1 .qrcode{
+						display: block;
+					}
+                    .image1 {
+                        background-image: url("./resource/images/img386x200-1.jpg");
+                        height: 162px;
+                        background-size: cover;
+						.qrcode{
+							text-align: center;
+							background-color: rgba(45, 127, 129, 0.865);
+							display: none;
+							span{
+								color: white;
+								font-size: 18px;
+								line-height: 53px;
+							}
+						}
+                    }
+					&:hover .image2 .qrcode{
+						display: block;
+					}
+					.image2 {
+					    background-image: url("./resource/images/img386x200-2.jpg");
+					    height: 162px;
+					    background-size: cover;
+						.qrcode{
+							text-align: center;
+							background-color: rgba(45, 127, 129, 0.865);
+							display: none;
+							span{
+								color: white;
+								font-size: 18px;
+								line-height: 53px;
+							}
+						}
+					}
+					&:hover .image3 .qrcode{
+						display: block;
+					}
+					.image3 {
+					    background-image: url("./resource/images/img386x200-3.jpg");
+					    height: 162px;
+					    background-size: cover;
+						.qrcode{
+							text-align: center;
+							background-color: rgba(45, 127, 129, 0.865);
+							display: none;
+							span{
+								color: white;
+								font-size: 18px;
+								line-height: 53px;
+							}
+						}
+					}
+					&:hover .image4 .qrcode{
+						display: block;
+					}
+					.image4 {
+					    background-image: url("./resource/images/img386x200-1.jpg");
+					    height: 162px;
+					    background-size: cover;
+						.qrcode{
+							text-align: center;
+							background-color: rgba(45, 127, 129, 0.865);
+							display: none;
+							span{
+								color: white;
+								font-size: 18px;
+								line-height: 53px;
+							}
+						}
+					}
+					&:hover .image5 .qrcode{
+						display: block;
+					}
+					.image5 {
+					    background-image: url("./resource/images/img386x200-2.jpg");
+					    height: 162px;
+					    background-size: cover;
+						.qrcode{
+							text-align: center;
+							background-color: rgba(45, 127, 129, 0.865);
+							display: none;
+							span{
+								color: white;
+								font-size: 18px;
+								line-height: 53px;
+							}
+						}
+					}
+					&:hover .image6 .qrcode{
+						display: block;
+					}
+					.image6 {
+					    background-image: url("./resource/images/img386x200-3.jpg");
+					    height: 162px;
+					    background-size: cover;
+						.qrcode{
+							text-align: center;
+							background-color: rgba(45, 127, 129, 0.865);
+							display: none;
+							span{
+								color: white;
+								font-size: 18px;
+								line-height: 53px;
+							}
+						}
+					}
+                    // 职业卡片的文字标题
+                    .wrapper {
+                        padding: 20px 0;
+                        .title {
+                            font-size: 28px;
+                            font-weight: 700;
+                        }
+                        .info {
+                            color: #a3a3a3;
+                        }
+                        .btn {
+                            padding: 10px 0;
+                            button {
+                                background-color: #2e7f82;
+                                color: white;
+                                padding: 5px 17px;
+                                outline: none;
+                                border: 1px solid;
+								// 增加特效
+								&:hover{
+									color: #2e7f82;
+									background-color: white;
+									border: 1px solid;
+								}
+                            }
+                            
+                        }
+						
+                    }
+
+
+                }
+            }
+        //先屏蔽
+		 // }
+		// 查看更多
+		.ct-more{
+			background-color: rgba(255,255,255,0.852);
+			margin-top:30px;
+			text-align: center;
+			.control{
+				display: inline-block;
+				color:#2e7f82;
+				height: 42px;
+				line-height: 42px;
+				width: 210px;
+				text-align: center;
+				background-image: url("./resource/images/list-more.png");
+			}
+		}
+		
+		.ct-img-news{
+			display: flex;
+			margin-top: 30px;
+			.img-news{
+				background-image: url("./resource/images/bg-imgbox590x362.png");
+				width:590px;
+				height:362px ;
+				background-size: cover;
+				// background-color: #2e7f82;
+				display: inline-block;
+				.img-list{
+					// display:inline-block;
+					// width: 50px;
+					padding-top:23px;
+					padding-left: 18px;
+				}
+			}
+			.text-news{
+				width:calc(100% - 640px);
+				height:362px ;
+				// padding: 0 30px;
+				padding-left: 20px;
+				// background-color: #00ff00;
+			
+			.tab-title{
+				border-bottom: 1px solid #7cb0b1;
+				#first{
+					background-color: #2e7f82;
+					color:white;
+				}
+				span{
+					color: #7cb0b1;
+					padding: 10px 15px;
+					display: inline-block;
+					&:active{
+						background-color: #7cb0b1;
+						// background-color: #b1134a;
+						color:white;
+					}
+				}
+			}
+			.tab-content{
+				font-size: 12px;
+				// padding-bottom: 300px;
+				ul{
+					padding: 0;
+					li{
+						list-style: none;
+						color:#7cb0b1;
+						font-weight: 600;
+						font-family: 黑体;
+						line-height: 32px;
+						border-bottom: 1px solid #94c8c8;
+						.info{
+							float: right;
+							color:rgb(175,175,175);
+						}
+						.text{
+							display: inline-block;
+							width: 85%;
+							// background-color: #e1dbdb;
+							white-space: nowrap;
+							overflow: hidden;
+							text-overflow: ellipsis;
+							
+						}
+						.recom{
+							display: inline-block;
+							background-color:#b1ddd6;
+							width: 100%;
+							// height: 20%;
+							.tuijian{
+								display: inline-block;
+								background-color: white;
+								width: 10%;
+								height: 20%;
+								text-align: center;
+							}
+						}
+
+					}
+				}				
+			}
+
+			}
+		}
+		// 视频中心
+		.v-center{
+			margin-top: 20px;
+			// padding-bottom: 200px;
+			// 标题
+			.title{
+				color:rgb(42,125,128);
+				.cn{
+					font-size: 28px;
+					font-weight: 700;
+				}
+				&::before{
+					content: ' ' ;
+					display: inline-block;
+					width:9px;
+					height: 22px;
+					line-height: 20px;
+					position: relative;
+					background-color: #2e7f82;
+					
+				}
+				.right{
+					float: right;
+					width: 30px;
+					height: 30px;
+					background-color: white;
+					display: incline-block;
+					margin: 0 6px;
+					text-align: center;
+					vertical-align:middle;
+					line-height: 30px;
+				}
+				.en{
+					
+				}
+			}
+			.v-img-list{
+				.wrapper{
+					display: flex;
+					padding-top: 10px;
+					// width: 100%;
+					overflow: hidden;
+					.img-list{
+						margin: 0;
+						padding: 0;
+						.item{
+							margin-right: -8px;
+							width: 278px;
+							list-style: none;
+							&:hover .play .qrcode{
+								display: block;
+							}
+							.play{
+								.qrcode{
+									display: none;
+								}
+								img{
+									position: absolute;
+									width: 6%;
+									margin-left: 74px;
+									margin-top: -122px;
+								}
+							}
+							.info{
+								display: inline-block;
+								width: 251px;
+								text-align: center;
+								background-color: #2e7f82;
+								height: 40px;
+								line-height: 40px;
+								font-size: 22px;
+								color:white;
+							}
+							&:hover .info{
+								background-color: #94c8c8;
+								color: #2e7f82;
+							}
+							img{
+								width: 90%;
+							}
+							
+						}
+					}
+				}
+				
+			}
+		}
+		// 装备展示
+		.v-equip{
+			margin-top: 20px;
+			position:relative;
+			.title{
+				color: #2e7f82;
+				.cn{
+					font-size: 28px;
+					font-weight: 700;				
+				}
+				&::before{
+					content: ' ' ;
+					display: inline-block;
+					width:9px;
+					height: 22px;
+					line-height: 20px;
+					position: relative;
+					background-color: #2e7f82;
+					
+				}
+			}
+			.equip-list{
+				display: flex;
+				.row{
+					margin-right: 20px;
+					.item{
+						background-image: url("./resource/images/bg-imgbox590x362.png");
+						// padding: 13px 9px;
+						width: 523px;
+						height: 321px;
+						background-size: cover;
+						position: relative;
+						img{
+							position: relative;
+							top:6%;
+							left:13px;
+							width: 95%;
+						}
+					}
+				}
+			}
+		}
+		.screen{
+			// display: flex;
+			margin-top: 22px;
+			margin-right: 10px;
+			// margin-bottom: 200px;
+			padding-bottom: 50px;
+			// position: absolute;
+			position:relative;
+			.title{
+				color: #2e7f82;
+				.cn{
+					font-size: 28px;
+					font-weight: 700;				
+				}
+				&::before{
+					content: ' ' ;
+					display: inline-block;
+					width:9px;
+					height: 22px;
+					line-height: 20px;
+					position: relative;
+					background-color: #2e7f82;
+					
+				}
+			}
+			.print{
+				display: flex;
+				margin-top: 25px;
+				background-image: url("./resource/images/bg-imgbox590x362.png");
+				// padding: 13px 9px;
+				background-size: cover;
+				width: 1064px;
+				height: 654px;
+				background-size: cover;
+				position: relative;
+				.btn1{
+					position: absolute;
+					top:50%;
+					left: 1%;
+					img{
+						width: 66%;
+					}
+				}
+				.btn2{
+					position: absolute;
+					top:52%;
+					left: 97%;
+					img{
+						width: 90%;
+					}
+				}
+				.shot{
+					// display: flex;
+					// position: relative;
+					ul{
+						display: flex;
+					li{
+						display: flex;
+						list-style: none;
+						img{
+							display: flex;
+							position: relative;
+							width: 983px;
+							height: 583px;
+							top:22px;
+							left:4px;
+						}
+					}
+						}
+					// top:3%;
+					// left:9px;
+					// width: 60%;
+				}
+			}
+		}
+
+		}
+		
+	}
+	
+	// 底部
+	.footer{
+		// display: inline-block;
+		position:absolute;
+		width:100%;
+		height:150px;
+		bottom:-3139px;
+		background-color: rgba(45,126,129,0.957);
+		text-align: center;
+		font-size: 10px;
+		// float: left;
+		.logo{
+			position: absolute;
+			height: 20px;
+			width: 200px;
+			left: 13%;
+			top:20px;
+			img{
+				width: 150px;
+				height: 100px;
+			}
+			    // top: 25px;
+				// z-index: 100;
+		}
+		.located{
+			display: inline-block;
+			position: relative;
+			// padding-left: 90px;
+			padding-top: 30px;
+			.ye{
+				padding-bottom: 3px;
+				padding-left: 110px;
+				float: left;
+				color:rgb(196,202,144);
+			}
+			.wh{
+				padding-bottom: 3px;
+				float:left;
+				padding-left: 110px;
+				color:rgb(237,247,247);
+			}
+		}
+		
+	}
+	
+	
+	
+
+    // 结构 版权
+}
